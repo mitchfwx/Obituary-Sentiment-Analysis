@@ -1,0 +1,10 @@
+#theme: jekyll-theme-slate
+#markdown: CommonMarkGhPages
+
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
