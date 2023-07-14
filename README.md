@@ -1011,7 +1011,9 @@ topNames = summaryTable[summaryTable.Count >= 4].nlargest(40, "Average").reset_i
 bottomNames = summaryTable[summaryTable.Count >= 4].nsmallest(40, "Average").reset_index(drop = True).sort_values("Average", ascending=True)
 ```
 
-There is VERY little variation in the top names. All have a score of essentially 1, and unfortunately there is only a single observation for each name. That doesn't really tell us much of anything, other than that particular Del was extremely well liked. 
+There is little variation in the top names. All of the top names have a very high score that is between .8 and 1. That doesn't really tell us much of anything, other than that particular Del was extremely well liked. Additionally, it is challenging to take any major conclusions when the number of observations for most of the top names is less than 10. 
+
+However, I do find it quite interesting that the name Jane is not only in our top 40 names, but also appears in our data set over 40 times! Not only have a lot of "Jane's" died since 2018 in Indianapolis, they were all very well liked. 
 
 
 ```python
@@ -1054,7 +1056,9 @@ fig.suptitle("Indiana's Most Liked Names", fontsize=20)
     
 
 
-Unlike the top ranked obituaries, there is quite a bit more variation in the bottom ranked obituaries. The difference between the worst name on average is sizeable compared to the 40th worst. However, the issue persists of very little data. Only a handful of these names have more than a single occurence in the data set. If we were to make any conclusions about a relation between a person's name and how well they were liked, we would need significantly more data. 
+Unlike the top ranked obituaries, there is quite a bit more variation in the bottom ranked obituaries. The difference between the worst name on average is sizeable compared to the 40th worst. The issue persists of  little data for a given name with most of our bottom 40 still having less than 10 observations. 
+
+However, similar to the top names, we do have one that really stands out: Danny. Not only is this name in our bottom 40 compound scores, but we have over 20 obituaries for Danny in our data set. This isn't great for any Danny living in Indianapolis right now. Maybe consider a name change? 
 
 
 ```python
