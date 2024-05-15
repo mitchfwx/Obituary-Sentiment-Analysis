@@ -1081,7 +1081,7 @@ ax1.bar(bottomNames['First Name'],bottomNames['Average'], color = "dodgerblue", 
 ax1.set_xticklabels(bottomNames['First Name'], fontsize=8)
 
 ax2.plot(bottomNames['First Name'],bottomNames['Count'], color = "crimson")
-fig.suptitle("Indiana's Most Liked Names", fontsize=20)
+fig.suptitle("Indiana's Most Disliked Names", fontsize=20)
 
 
 ```
@@ -1093,7 +1093,7 @@ fig.suptitle("Indiana's Most Liked Names", fontsize=20)
 
 
 
-    Text(0.5, 0.98, "Indiana's Most Liked Names")
+    Text(0.5, 0.98, "Indiana's Most Disliked Names")
 
 
 
